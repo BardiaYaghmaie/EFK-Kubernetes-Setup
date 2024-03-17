@@ -497,13 +497,13 @@ kubectl run nginx-efk-test --image=nginx --restart=Never
 13- go to menu → management → stack management → index management
 
 you should be able to see something like:
+![Screenshot from 2024-03-17 14-46-15](https://github.com/BardiaYaghmaie/EFK-Kubernetes-Setup/assets/101035374/bbfb1b4b-424f-4575-b0c1-2edbc2e46d20)
 
-![Screenshot from 2024-03-17 14-46-15.png](Kubernetes%20Logging%20with%20EFK%20(Elasticsearch,%20Fluent%2086f2ef166d2f4454b4d312b37bcb1e37/Screenshot_from_2024-03-17_14-46-15.png)
 
 14- go to menu → analytics → discover
 
 in the search bar, search for nginx-efk-test and you should be able to see some logs
+![Screenshot from 2024-03-17 14-51-10](https://github.com/BardiaYaghmaie/EFK-Kubernetes-Setup/assets/101035374/10eb241c-68e2-42e6-a087-8982f781a95c)
 
-![Screenshot from 2024-03-17 14-51-10.png](Kubernetes%20Logging%20with%20EFK%20(Elasticsearch,%20Fluent%2086f2ef166d2f4454b4d312b37bcb1e37/Screenshot_from_2024-03-17_14-51-10.png)
 
 ## Congrats! EFK is up and running!
