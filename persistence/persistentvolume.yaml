@@ -1,0 +1,23 @@
+# persistentvolume.yaml
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: efk-local-pv
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+  - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: efk-storage
+  local:
+    path: /mnt/data/efk
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+      - matchExpressions:
+        - key: kubernetes.io/hostname
+          operator: In
+          values:
+          - <"hostname of the worker node">
